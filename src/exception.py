@@ -26,6 +26,6 @@ class InsufficientFoodError(Exception):
 
 
 class AnimalNotFoundError(Exception):
-    """Raised when an animal ID cannot be located."""
-    def __init__(self, animal_id: str):
-        super().__init__(f"No animal found with ID '{animal_id}'.")
+    """Raised when an animal name cannot be located."""
+    def __init__(self, animal_name: str):
+        super().__init__(f"No animal found with name '{animal_name}'.")
